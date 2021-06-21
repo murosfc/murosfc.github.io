@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+main h1
+{
+    font-family: 'Concert One', cursive;
+}
+main
+{
+    background-image: url("fundoMain.jpg");  
+}
+article{
+    background-color: rgba(153, 223, 245, 0.664);
+}
+article p {
+    color: blue;
+    text-align: center;
+}
