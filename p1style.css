@@ -1,30 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
-.grid-container {
-    display: inline-grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    background-color: #ebd7cad7;
-    grid-column-gap: 30px;
-    padding: 10px 10px 50px 10px;
-    margin: 20px 50px 20px 50px;            
-}
-.grid-item {
-    background-color: rgba(224, 208, 193, 0.753);
-    /*border: 1px solid rgb(0, 0, 0);*/
-    padding: 20px;  
-    margin-bottom: 20px;
-}
 
-.grid-item:after
-{
-    content: "";
-    display: block;
-    clear: both;
-}
-ul
+/*Zerando o padding do ul*/
+ul 
 {    
     padding: 0px;
 }
 
+/*Menu superior e inferior exibidos em linha com borda*/
 #menu-topo li, #menu-botton li
 {
     list-style-type: none;
@@ -33,6 +15,7 @@ ul
     padding: 1px 10px 1px 10px;
 }
 
+/*Personalização do menu superior em linha*/
 #menu-aux li {
     list-style-type: none;    
     border: 1px solid rgb(3, 3, 3); 
@@ -44,6 +27,7 @@ ul
     display: inline-block;
 }
 
+/*Personalização do menu lateral esquerdo*/
 #lateral-esq li {
     list-style-type: none;
     margin-bottom: 10px;     
@@ -53,35 +37,75 @@ ul
     font-weight: bold;
     font-family: 'Aladin', cursive;
 }
+/*Personalização da formatação do menu superior e lateral esquerdo para visitado e link*/
 #lateral-esq li :visited, :link, #menu-aux li :visited, :link
 {
     text-decoration: none;
     color: black;
 }
+/*Personalização do hover do menu superior e lateral esquerdo*/
 #lateral-esq ul :hover, #menu-aux ul :hover 
 {    
     background-color: #b87113;
 }
+/*Responsividade e formatação da imagem da notícia principal*/
 #noticia-central img {
     width: 50%;
     height: auto;
 }
+/*Responsividade e formatação da imagem da principal da lateral direita*/
 #lateral-direita img {
     width: 70%;
     height: auto; 
 }
+/*Responsividade e formatação das imagens do smallpost na laterial direita*/
 #smallpost1 img, #smallpost2 img {      
     float: left;
     width: 40%;
     height: auto;  
     margin-right: 5px;  
 }
+/*Responsividade e formatação da imagem na lateral esquerda*/
+#lateral-esq img{
+    width: 100%;
+    height: auto;    
+}
+/*Limpando a float after para as imagens não desrespeitarem o block no qual está inserida*/
 #smallpost1:after, #smallpost2:after {
     content: "";
     display: block;
     clear: both;
 }
-.grid-container-sup {
+/*Responsividade e formatação da imagem do logo superior*/
+#logo-lateral img{
+    width: 50%;
+    height: auto; 
+    margin-left: 30px;
+    padding: 10px;
+}
+/*Alinhamento à direita dos textos superior e inferior direito*/
+#lateral-sup-dir, #lateral-inf-dir
+{
+    text-align: right;  
+}
+/*Alinhamento do botão e texto no centro inferior*/
+#lateral-inf-centro
+{
+    text-align: center;  
+}
+footer h6
+{
+    margin-block-start: 0px;    
+}
+
+/*Fundo transparente para os itens principais do site*/
+#lateral-esq, #noticia-central, #lateral-direita
+{
+    background-color: transparent;
+}
+
+/*Pacotes Grid*/
+.grid-container-sup {    
     display: inline-grid;
     grid-template-columns: 1fr 4fr;
     background-color: #f5e5dad7;
@@ -90,52 +114,35 @@ ul
     margin: 0px 50px 10px 50px;   
 }
 .grid-item-sup {
-    background-color: transparent;
-    /*border: 1px solid rgb(0, 0, 0);*/
+    background-color: transparent;    
     padding: 5px;   
     grid-row-gap: 10px;            
 }
-#logo-lateral img{
-    width: 50%;
-    height: auto; 
-    margin-left: 30px;
+.grid-container {    
+    display: inline-grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: #ebd7cad7;
+    grid-column-gap: 30px;
+    padding: 10px;
+    margin: 20px 50px 20px 50px;            
 }
-#lateral-sup-dir, #lateral-inf-dir
-{
-    text-align: right;  
+.grid-item {
+    background-color: rgba(224, 208, 193, 0.753);    
+    padding: 20px;  
+    margin-bottom: 20px;
 }
-.grid-container-inf {
-    display: inline-grid;       
-    grid-template-columns: 2fr 1fr 2fr; 
-    grid-column-gap: 20px;
-    padding: 5px; 
-    margin: 0px 50px 10x 50px;  
-    border-top: 1px solid rgb(0, 0, 0); 
-    width: 95%;
+.grid-container-inf
+{        
+    display: grid;       
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-column-gap: 30px;
+    padding: 10px;
+    margin: 0px 50px 20px 50px; 
 }
 .grid-item-inf {
-    background-color: transparent;    
-    padding: 5px; 
+    background-color: transparent;  
     grid-row-gap: 10px;              
 }
-#lateral-inf-centro
-{
-    text-align: center;  
-}
-#lateral-esq, #noticia-central, #lateral-direita
-{
-    background-color: transparent;
-}
-#midias ul{
-    padding: 5px;   
-    margin-left: 10px;
-}
-#midias li{
-    margin-right: -10px;
-    padding: 5px;   
-    font-family: 'Arimo', sans-serif; 
-    font-size: 15px;
-    list-style-type: square;        
-    color: black;
-    border: unset;
-}
+
+
+
