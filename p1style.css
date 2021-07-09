@@ -98,6 +98,13 @@ footer h6
     margin-block-start: 0px;    
 }
 
+/*Tamanho da imagem do voltar ao topo*/
+#lateral-inf-centro img
+{
+    width: 20px;
+    height: 20px;
+}
+
 /*Fundo transparente para os itens principais do site*/
 #lateral-esq, #noticia-central, #lateral-direita
 {
