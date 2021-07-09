@@ -27,22 +27,48 @@ ul
     display: inline-block;
 }
 
-/*Personalização do menu lateral esquerdo*/
-#lateral-esq li {
-    list-style-type: none;
-    margin-bottom: 10px;     
-    border: 1px solid rgb(3, 3, 3); 
-    padding: 5px;
-    margin-left: 1px;
-    font-weight: bold;
-    font-family: 'Aladin', cursive;
+/*Personalização dos menus laterais esquerdo*/
+#lateral-esq li 
+	{
+	list-style-type: none;
+	margin-bottom: 10px;     
+	border: solid 1px rgb(3, 3, 3); 
+	padding: 5px;
+	margin-left: 1px;
+	font-weight: bold;
+	font-family: 'Aladin', cursive;
+	}
+
+#lateral-esq #midias
+{
+	border: solid 1px black;
 }
+	
+#lateral-esq #midias li{	
+	list-style-type: circle;
+	font-family: Arial, sans-serif;
+	font-size: small;
+	margin: 0px 0px 0px 5px;     
+	border: none; 		
+}
+
 /*Personalização da formatação do menu superior e lateral esquerdo para visitado e link*/
-#lateral-esq li :visited, :link, #menu-aux li :visited, :link
+#lateral-esq li :link
 {
     text-decoration: none;
     color: black;
 }
+#lateral-esq li :visited
+{
+    text-decoration: none;
+    color: black;
+}
+#menu-aux li :visited, li :link
+{
+    text-decoration: none;
+    color: black;
+}
+
 /*Personalização do hover do menu superior e lateral esquerdo*/
 #lateral-esq ul :hover, #menu-aux ul :hover 
 {    
@@ -94,15 +120,9 @@ ul
     text-align: center;  
 }
 footer h6
-{
-    margin-block-start: 0px;    
-}
-
-/*Tamanho da imagem do voltar ao topo*/
-#lateral-inf-centro img
-{
-    width: 20px;
-    height: 20px;
+{    
+	margin: 0px;
+	padding: 0px;
 }
 
 /*Fundo transparente para os itens principais do site*/
@@ -111,6 +131,12 @@ footer h6
     background-color: transparent;
 }
 
+/*Tamanho da imagem do voltar ao topo*/
+#lateral-inf-centro img
+{
+    width: 20px;
+    height: 20px;
+}
 /*Pacotes Grid*/
 .grid-container-sup {    
     display: inline-grid;
