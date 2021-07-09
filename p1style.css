@@ -170,7 +170,8 @@ footer h6
     grid-template-columns: 2fr 1fr 2fr;
     grid-column-gap: 30px;
     padding: 10px;
-    margin: 0px 50px 20px 50px; 
+    margin: 0px 50px 20px 50px;
+	border-top: solid 1px black;
 }
 .grid-item-inf {
     background-color: transparent;  
