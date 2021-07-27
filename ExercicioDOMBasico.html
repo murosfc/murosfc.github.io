@@ -1,0 +1,22 @@
+<!-- Utilizando os conceitos básicos de manipulação de HTML por meio do DOM e adicionando eventos,
+crie uma página HTML que contenha um input do tipo texto que ao ser digitado qualquer valor o texto
+é reproduzido no parágrafo-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="./ExercicioDOMBasico.js"></script>
+    <style>
+      input
+      {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+    <title>Exercício DOM Básico</title>
+  </head>
+  <body>
+    <input type="text" id="in" onkeyup="leituraEscrita()">
+    <div id="out">Você está digitando: ""</div>
+  </body>
+</html>
