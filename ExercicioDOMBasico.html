@@ -6,12 +6,19 @@ crie uma página HTML que contenha um input do tipo texto que ao ser digitado qu
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="./ExercicioDOMBasico.js"></script>
-    <link rel="stylesheet" href="./ExercicioDOMBasico.css">
+    <style>
+      input
+        {
+        float: left;
+        margin-right: 10px;
+        }
+    </style>
     <title>Exercício DOM Básico</title>
   </head>
   <body>
     <input type="text" id="in" onkeyup="leituraEscrita()">
     <div id="out">Você está digitando: ""</div>
+    <br><br><br>
     <footer><a href="index.html"><mark>Retornar para lista de exercícios</mark></a></footer>
   </body>
 </html>
