@@ -1,0 +1,10 @@
+p{
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+#total-calculado
+{
+    width: 220px;
+    font-weight: bold;
+    background-color: rgb(220, 215, 100);
+}

@@ -1,0 +1,52 @@
+<!--
+    Criar um formulário para Reserva de Hotel
+- Nome
+- Telefone
+- Data Chegada
+- Data Saída
+- Tipo de Quarto: Single (R$ 139,00), Double(R$ 220,00), Triplo(R$ 340,00)
+- Número Crianças menores de 5 anos(cada criança adicional custa R$ 30,00 a mais por noite) máximo de 4 hóspedes
+Efetuar o cálculo e apresentar ao usuário
+-->
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <script src="form.js"></script>
+        <title>Trabalho de Avaliação P2</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <header><h2>Formulário para reserva de Hotel</h2></header>
+        <form>
+            <p>Nome: </p>
+            <input type="text" id="nome"><br>
+
+            <p>Telefone: </p>
+            <input type="tel" id="telefone"><br>
+
+            <p>Check-in: </p>
+            <input type="date" id="checkin"><br>
+
+            <p>Check-out: </p>
+            <input type="date" id="checkout">
+
+            <p>Tipo de quarto: </p>
+            <input type="radio" id="single" name="tipo_quarto" value="SINGLE" onclick="AtualizaCriancas(1)">
+            <label for="single">Single (R$ 139,00)</label><br>
+            <input type="radio" id="double" name="tipo_quarto" value="DOUBLE" onclick="AtualizaCriancas(2)">
+            <label for="double">Double (R$ 220,00)</label><br>
+            <input type="radio" id="triplo" name="tipo_quarto" value="TRIPLO" onclick="AtualizaCriancas(3)">
+            <label for="triplo">Triplo (R$ 340,00)</label>
+            <br>
+            
+            <p>Quantidade de crianças (menores de 5 anos): </p>
+            <input id="qt_criancas" type="number" value="0" min="0" max="3">           
+
+            <br><br>
+            <button type="button" id="btn" onclick="ValidaInfo()">Calular Reserva</button>
+            <br><br>
+            <div id="total"></div>
+        </form>
+    </body>
+</html>
