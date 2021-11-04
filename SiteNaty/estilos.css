@@ -9,11 +9,10 @@
 }
 .grid-item
 {
-    
     width: auto;
     text-decoration: none; 
     display: grid;
-    background-color: gold;
+    background-color: #18bff4;    
 }
 
 .sobre
@@ -45,13 +44,27 @@
 }
 
 footer
-{
-    width: auto;
-    margin-left: auto; 
-    margin-right: 0;
-    padding: 0 1em 0 0;
+{    
+    vertical-align: middle;
+    padding: 1em 0 0.5em 1em;
+    color: black;   
+    font-family: 'IBM Plex Serif', serif;        
 }
+
+footer > #atendimento{    
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: small;    
+}
+span{
+    font-weight: bold;    
+}
+
 
 .social-media{
     max-width:30px;
+}
+
+#menutopo{
+    padding: 0.5em;
 }
