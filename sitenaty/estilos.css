@@ -1,4 +1,4 @@
-@import url(“mediaquery.css”);
+@import url(mediaquery.css);
 
 .grid-container
 {   
@@ -52,4 +52,30 @@ span
 #menutopo
 {
     padding: 0.5em;
+}
+
+.sobre {
+    font-family: 'IBM Plex Serif', serif;
+    padding: 1em;
+}
+
+.detalhes {
+    font-family: 'IBM Plex Serif', serif;
+    padding: 1em;
+    background-color: #ff16a2; 
+}
+
+#indexfooter
+{
+    margin-right: auto;
+    margin-left: 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+button:focus {
+    border: none;
 }
