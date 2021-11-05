@@ -1,0 +1,81 @@
+@import url(mediaquery.css);
+
+.grid-container
+{   
+    display: grid;
+    grid-template-columns: 1fr;          
+    width: 500px;
+    margin: auto;
+}
+
+.grid-item
+{
+    width: auto;    
+    display: grid;
+    background-color: #18bff4; 
+    margin: auto ;     
+}
+
+.main-img
+{
+    width: auto;
+    max-width:500px;       
+    height: auto;    
+    box-sizing: border-box;
+}
+
+footer
+{         
+    padding: 1em 0 0.5em 1em;
+    color: black;   
+    font-family: 'IBM Plex Serif', serif;
+}  
+ 
+
+footer > #atendimento
+{        
+    color: white;
+    font-size: small;
+}
+
+span
+{
+    font-weight: bold;    
+}
+
+
+.social-media
+{
+    max-width:30px;
+}
+
+#menutopo
+{
+    padding: 0.5em;
+}
+
+.sobre {
+    font-family: 'IBM Plex Serif', serif;
+    padding: 1em;
+}
+
+.detalhes {
+    font-family: 'IBM Plex Serif', serif;
+    padding: 1em;
+    background-color: #ff16a2; 
+}
+
+#indexfooter
+{
+    margin-right: auto;
+    margin-left: 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+button:focus {
+    border: none;
+}
