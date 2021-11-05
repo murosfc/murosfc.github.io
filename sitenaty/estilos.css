@@ -79,3 +79,11 @@ button {
 button:focus {
     border: none;
 }
+
+a .btn-bf {    
+    margin: auto;
+    padding: auto;
+    width: auto;
+    height: auto;  
+    display: block; 
+  }
