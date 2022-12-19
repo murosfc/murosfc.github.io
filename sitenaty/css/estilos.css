@@ -1,4 +1,12 @@
-@import url(mediaquery.css);
+li > .nav-link{
+    color: black;
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
 
 .grid-container
 {   
@@ -13,6 +21,22 @@
     width: auto;    
     display: grid;
     background-color: #18bff4; 
+    margin: auto ;     
+}
+
+.grid-item-red
+{
+    width: auto;    
+    display: grid;
+    background-color: #f41823; 
+    margin: auto ;     
+}
+
+.grid-item-pink
+{
+    width: auto;    
+    display: grid;
+    background-color: #ff16a2; 
     margin: auto ;     
 }
 
@@ -57,6 +81,15 @@ span
 .sobre {
     font-family: 'IBM Plex Serif', serif;
     padding: 1em;
+}
+
+.sobre-footer {
+    font-family: 'IBM Plex Serif', serif;
+    padding: 0em 2em 1em 1em;    
+    text-align: justify;    
+    font-size: medium;
+    font-weight: bold;
+    color: white;
 }
 
 .detalhes {
