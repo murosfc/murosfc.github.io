@@ -36,6 +36,12 @@
     $(document).ready(function () {
       $("#menu-container").load("menu.html");
     });
+    window.onload = function () {
+      document.getElementById("consultoriacompleta").classList.add("active");
+      const liElement = document.querySelector('li.btn.btn-sm.btn-outline-dark.active');
+      const aElement = liElement.querySelector('a.nav-link');
+      aElement.id = 'active';
+    }; 
   </script>
 </body>
 
